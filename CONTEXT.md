@@ -18,6 +18,10 @@ Co-design a computer and its cooling system as one machine. Start from the heat 
 - **Model before build.** Over-parameterize the virtual model, find the sensitive parameters, and measure those on the bench first.
 - **Compact.** No multi-square-metre solar.
 - **Any attainable fluid.** Don't default to water.
+- **Metric (SI) only.** Convert imperial inputs (oz/lb cans, psi, AWG) at the boundary.
+- **Kelvin first, °C beside it** in every document, e.g. "338.15 K (65 °C)". Temperature differences go in K.
+- **Deterministic numbers.** Physics values come from tested code (CoolProp, MARVIN's `eng` library), with sourced correlations.
+- **Standards.** Meet, then beat, metric ISO/IEC standards: ISO 128/129-1, ISO 1101, ISO 10628, IEC 60617, EN 378 / ISO 5149, EN 12735.
 - **Safety.** Pressure-rated parts and a relief device on anything above atmospheric pressure.
 
 ## Tooling
